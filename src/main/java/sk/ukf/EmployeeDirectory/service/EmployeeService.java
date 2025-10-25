@@ -15,4 +15,9 @@ public interface EmployeeService {
     void deleteById(int id);
 
     List<Employee> findByFirstNameAndLastName(String firstName, String lastName);
+
+    List<Employee> search(String query);
+
+    List<Employee> sortBy(String by);
+
 }
